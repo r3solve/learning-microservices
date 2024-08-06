@@ -20,7 +20,7 @@ func GetQuote(category string) ([]Quote, error) {
 		return nil, fmt.Errorf("error creating request: %v", err)
 	}
 
-	request.Header.Set("X-Api-Key", "EoJtN3S7jZgFB4kZmeJPbxhyc6DdbyCUo96J84vo")
+	request.Header.Set("X-Api-Key", "key")
 	client := &http.Client{}
 	response, err := client.Do(request)
 	if err != nil {
